@@ -16,10 +16,11 @@ pipeline {
             steps {
                 script {
                     // Restoring dependencies
-                    bat "cd ${DOTNET_CLI_HOME} && dotnet restore"
+                    //bat "cd ${DOTNET_CLI_HOME} && dotnet restore"
+                    bat "dotnet restore"
 
                     // Building the application
-                    bat "cd ${DOTNET_CLI_HOME} && dotnet build --configuration Release"
+                    bat "dotnet build --configuration Release"
                 }
             }
         }
