@@ -1,5 +1,10 @@
 pipeline {
-    agent none
+    agent {
+    node {
+        name 'jenkins2'
+    }
+}
+
     environment {
         DOTNET_CLI_HOME = "C:\\Program Files\\dotnet"
     }
