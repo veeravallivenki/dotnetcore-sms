@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-        label 'windows'
-    }
+    agent none
     environment {
         DOTNET_CLI_HOME = "C:\\Program Files\\dotnet"
     }
